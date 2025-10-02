@@ -1,7 +1,7 @@
 # Health and Wellness Web Application
-แพลตฟอร์มสุขภาพครบวงจรที่ให้บริการแชทบอท AI อัจฉริยะ, การจัดการข้อมูลสุขภาพ, และระบบวิเคราะห์พฤติกรรมผู้ใช้ พัฒนาด้วยสถาปัตยกรรม Microservices ที่ทันสมัยและยืดหยุ่น
+แพลตฟอร์มสุขภาพครบวงจรที่ให้บริการแชทบอท AI อัจฉริยะ, การจัดการข้อมูลสุขภาพ, พัฒนาด้วยสถาปัตยกรรม Microservices ที่ทันสมัยและยืดหยุ่น
 
-![Architecture Diagram](https://raw.githubusercontent.com/Nuttagun/Health-And-Wellness/main/CPE-681008_Presentation_Health%20And%20Wellness%20Web%20Application.png )
+![Architecture Diagram](https://raw.githubusercontent.com/Nuttagun/Health-And-Wellness/refs/heads/main/CPE-681008_Presentation_Health%20And%20Wellness%20Web%20Application.png?token=GHSAT0AAAAAADMKMQECUZNPCRKRGGC4HWTY2G57OLQ )
 
 ## ✨ คุณสมบัติหลัก (Features)
 
@@ -27,7 +27,7 @@
 *   **AI / LLM:**
     *   **Orchestration:** LangChain
     *   **LLM Service:** Ollama
-    *   **Models:** `gemma:4b`, `nomic-embed-text`
+    *   **Models:** `gemma3:4b`, `nomic-embed-text`
     *   **Vector Store:** ChromaDB
 *   **Reverse Proxy:** Nginx
 
@@ -84,6 +84,7 @@ DOMAIN=https://yourdomain.com
 SERVER=https://yourdomain.com/api
 RAG_API_URL=http://rag_service:8002
 OLLAMA_API_URL=http://ollama:11434
+PYTHON_AI_SERVICE_URL_ADMIN=http://analytics_engine:8000/water-behavior
 PYTHON_AI_SERVICE_URL=http://analytics_engine:8000/water-behavior
 
 # --- Security & API Keys ---
@@ -186,7 +187,7 @@ server {
 2.  **รอสักครู่** แล้วดาวน์โหลดโมเดลที่ต้องการ:
     ```bash
     # ดาวน์โหลดโมเดล Gemma (สำหรับสร้างคำตอบ)
-    docker compose exec ollama ollama pull gemma:2b
+    docker compose exec ollama ollama pull gemma3:4b
 
     # ดาวน์โหลดโมเดล Nomic (สำหรับทำ Embeddings)
     docker compose exec ollama ollama pull nomic-embed-text
