@@ -1,8 +1,7 @@
 # Health and Wellness Web Application
 แพลตฟอร์มสุขภาพครบวงจรที่ให้บริการแชทบอท AI อัจฉริยะ, การจัดการข้อมูลสุขภาพ, และระบบวิเคราะห์พฤติกรรมผู้ใช้ พัฒนาด้วยสถาปัตยกรรม Microservices ที่ทันสมัยและยืดหยุ่น
 
-![Architecture Diagram]([https://i.imgur.com/your_architecture_diagram.png ](https://github.com/Nuttagun/Health-And-Wellness/blob/main/CPE-681008_Presentation_Health%20And%20Wellness%20Web%20Application.png)
-*(แนะนำ: ใส่แผนภาพสถาปัตยกรรมของโปรเจกต์ที่นี่)*
+![Architecture Diagram](https://raw.githubusercontent.com/Nuttagun/Health-And-Wellness/main/CPE-681008_Presentation_Health%20And%20Wellness%20Web%20Application.png )
 
 ## ✨ คุณสมบัติหลัก (Features)
 
